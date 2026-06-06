@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Amara | Geo-visualisation Portfolio</title>
+    <!-- We will link our CSS file here in Phase 3 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Joseph Amara</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me & This Portfolio</a></li>
+                <li><a href="#experience">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO / INTRO SECTION (SPLIT LAYOUT) -->
+        <section id="about" class="hero-section">
+            <div class="hero-container">
+                
+                <!-- Left Side of Hero -->
+                <div class="hero-left">
+                    <p class="subtitle">Geo-visualisation Portfolio</p>
+                    <h1>Joseph Amara</h1>
+                    <p class="tagline">GIS and Remote Sensing Analyst, Geologist, Environmental Consultant.</p>
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary">Experience &darr;</a>
+                        <!-- Replace 'your-cv.pdf' with your actual filename later -->
+                        <a href="your-cv.pdf" download class="btn btn-secondary">CV (Download &darr;)</a>
+                    </div>
+                </div>
+
+                <!-- Right Side of Hero -->
+                <div class="hero-right">
+                    <h2>About Me & This Portfolio</h2>
+                    <p>
+                        Hi. I'm Joseph Amara. I am a passionate GIS and Remote Sensing Analyst with a background 
+                        in Geology and Environmental Consultancy.
+                        Welcome to my geo-visualisation portfolio. This space showcases a curated selection 
+                        of spatial analysis, remote sensing, and cartographic design projects completed during 
+                        the first year of my Master's program in Geo-information Science at Wageningen University 
+                        and Research (WUR). Explore the maps below to see how I have applied my skills to transform 
+                        complex environmental and spatial data into compelling visual stories and actionable insights. 
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / PROJECTS SECTION -->
+        <section id="experience" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Selected work with visualisation projects</p>
+
+                <!-- PROJECT 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Visualizing the 3-30-300 guideline for Amsterdam West</h3>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-image">
+                            <!-- Replace with your screenshot path later -->
+                            <img src="images/project1.png" alt="Leaflet map of 3-30-300 guideline in Amsterdam West">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">The 3-30-300 is a green space guideline that specifies that residents should be able to see 3 trees from their homes, 
+                                30% of their neigbourhood is covered by trees and they should be at least 300m from the nearest quality green space. The project aimed to 
+                                create a visual representation of the 3-30-300 guideline for Amsterdam West. Through the use of Sentinel-2 satellite data (to obtain NDVI), 
+                                building footprints and road networkks from Open Street Maps and tree data from the City of Amsterdam, we developed an interactive Leaflet 
+                                map that highlights buldings in Amsterdam West  that meet the each of the 3-30-300 criteria and those met a combination of the criteria. 
+                                The project was developed entirely in Python using VS Code.</p>
+                            <div class="project-details">
+                                <h4>Key Takeaways:</h4>
+                                <p><strong>Objective:</strong> The objective of the project was to create an interactive visualization of the 3-30-300 guideline for buildinngs Amsterdam West.</p>
+                                <p><strong>Method:</strong> First, to confirm if three trees were visible, the model generated simulated sightlines from buildings to nearby trees and checked for 
+                                    physical obstructions. Secondly, Sentinel-2 data was used to calculate NDVI, which determined whether a building's specific neighbourhood met the 30% green 
+                                    coverage threshold. Thirdly, a network analysis calculated the shortest walking path from each building to the nearest green space to ensure it fell within the 
+                                    300-metre limit. Finally, all three assessments were combined to flag buildings that successfully met every condition. The final output is an interactive map 
+                                    that visualises the individual and combined results for each property.</p>
+                                <p><strong>Technical Stack and Data:</strong> VS Code, Python, Leaflet, Copernicus Sentinel-2, Open Street Maps Dataset</p>
+                            </div>
+                            <a href="#" target="_blank" class="project-link">View Live Visualisation &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Houston's Heat Divide</h3>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-image">
+                            <img src="images/project2.png" alt="ArcGIS StoryMap screenshot of Houston's Heat Divide">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">Brief description of what the visualisation does goes here...</p>
+                            <div class="project-details">
+                                <h4>Key Takeaways:</h4>
+                                <p><strong>Objective:</strong> Details about the project goal...</p>
+                                <p><strong>Method:</strong> Steps taken to achieve the visualization...</p>
+                                <p><strong>Tools used:</strong> ArcGIS StoryMaps, Landsat and Socio-demographic Data</p>
+                            </div>
+                            <a href="#" target="_blank" class="project-link">Link to ArcGIS StoryMap &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Proposed New Pipeline Route for Industrial Wastewater in the Maas Waal Area</h3>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-image">
+                            <img src="images/project3.png" alt="ArcGIS Pro pipeline route analysis">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">Brief description of what the visualisation does goes here...</p>
+                            <div class="project-details">
+                                <h4>Key Takeaways:</h4>
+                                <p><strong>Objective:</strong> Details about the project goal...</p>
+                                <p><strong>Method:</strong> Steps taken to achieve the visualization...</p>
+                                <p><strong>Tools used:</strong> ArcGIS Pro</p>
+                            </div>
+                            <!-- No link specified in layout outline, but space is ready if needed -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Comparing Global Thresholding and Random Forest Classification for Improved Flood Mapping Using Sentinel-1 Data: A Case Study of the 2023 Kakhovka Dam Breach</h3>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-image">
+                            <img src="images/project4.png" alt="Sentinel-1 Flood Mapping classification screenshots">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">Brief description of what the visualisation does goes here...</p>
+                            <div class="project-details">
+                                <h4>Key Takeaways:</h4>
+                                <p><strong>Objective:</strong> Details about the project goal...</p>
+                                <p><strong>Method:</strong> Steps taken to achieve the visualization...</p>
+                                <p><strong>Tools used:</strong> Google Earth Engine, ArcGIS Pro, Sentinel-1</p>
+                            </div>
+                            <a href="papers/kakhovka-flood-mapping.pdf" download class="project-link">Download Research Paper &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>From Grey to Green: A Climate-Adaptive Redesign of De Buurt, Wageningen</h3>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-image">
+                            <img src="images/project5.png" alt="Climate adaptive redesign poster screenshot">
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">Brief description of what the visualisation does goes here...</p>
+                            <div class="project-details">
+                                <h4>Key Takeaways:</h4>
+                                <p><strong>Objective:</strong> Details about the project goal...</p>
+                                <p><strong>Method:</strong> Steps taken to achieve the visualization...</p>
+                                <p><strong>Tools used:</strong> ArcGIS Pro, QGIS, Sentinel-2, Canva</p>
+                            </div>
+                            <a href="reports/de-buurt-redesign.pdf" download class="project-link">Download Project Report &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS & EDUCATION SECTION -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    
+                    <div class="skills-category">
+                        <h3>Remote Sensing</h3>
+                        <p>Google Earth Engine, Sentinel-1, Sentinel-2, Agisoft Metashape, etc.</p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>GIS & Spatial Modelling</h3>
+                        <p>ArcGIS Pro, QGIS, NetLogo, etc.</p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Programming</h3>
+                        <p>Python and R</p>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Others</h3>
+                        <p>Graphic Design (Canva), Data Management (GitHub/GitLab)</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <footer id="contact">
+        <div class="footer-container">
+            <h3>Joseph Amara</h3>
+            <p class="footer-tagline">GIS and Remote Sensing Analyst | Geologist | Environmental Consultant</p>
+            <div class="social-links">
+                <a href="mailto:your.email@wur.nl">Email</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2026 Joseph Amara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- We will link our JavaScript file here in Phase 4 if needed -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

@@ -8,71 +8,41 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
 <header>
-
     <nav class="nav-container">
-
-        <div class="logo">
-            Joseph Amara
-        </div>
-
+        <div class="logo">Joseph Amara</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
-
 </header>
 
 <main>
 
-<!-- =========================================================
-HERO SECTION
-========================================================= -->
-
 <section id="about" class="hero-section">
-
     <div class="hero-container">
-
         <div class="hero-left">
-
-            <img src="images/joseph-photo.jpg"
-                 alt="Joseph Amara"
-                 class="hero-photo">
-
+            <img src="images/joseph-photo.jpg" alt="Joseph Amara" class="hero-photo">
         </div>
-
         <div class="hero-right">
-
-            <p class="hero-subtitle">
-                Geo-visualisation Portfolio
-            </p>
-
-            <h1>
-                Joseph Amara
-            </h1>
-
+            <p class="hero-subtitle">Geo-visualisation Portfolio</p>
+            <h1>Joseph Amara</h1>
             <p class="hero-tagline">
                 GIS and Remote Sensing Analyst · Geologist · Environmental Consultant
             </p>
-
             <p class="hero-summary">
-
                 I am a Master's student in Geo-information Science at Wageningen
                 University and Research (WUR), with a background in geology,
                 environmental consultancy, GIS and remote sensing.
@@ -81,810 +51,353 @@ HERO SECTION
                 my studies and professional development. The work focuses on
                 spatial analysis, environmental monitoring, remote sensing,
                 cartography and geospatial decision-making.
-
             </p>
-
             <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="assets/Joseph_Amara_CV.pdf" download class="btn btn-secondary">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <a href="#projects" class="btn btn-primary">
-                    View Projects
+<section id="projects" class="projects-section">
+<div class="container">
+    <div class="section-heading">
+        <h2>Projects</h2>
+        <p>Selected projects in GIS, remote sensing, cartography and environmental analysis.</p>
+    </div>
+
+    <article class="project-card reveal">
+        <div class="project-grid">
+            
+            <div class="project-content">
+                <div class="project-category">
+                    <i class="fa-solid fa-tree-city"></i>
+                    Measuring Urban Nature Accessibility
+                </div>
+                <h3 class="project-title">
+                    Visualising the 3-30-300 Guideline for Amsterdam West
+                </h3>
+                <p class="project-desc">
+                    An interactive geospatial analysis of Amsterdam West's compliance with the 3-30-300 urban greening guideline. The project combines visibility analysis, satellite-derived vegetation metrics and network accessibility modelling to evaluate how effectively neighbourhoods provide access to urban nature.
+                </p>
+            </div>
+
+            <div class="project-image">
+                <img src="images/project1.png" alt="3-30-300 guideline interactive map">
+            </div>
+
+            <div class="project-footer">
+                <div class="project-summary-grid">
+                    <div class="summary-card tools-card">
+                        <h4>Tools & Data</h4>
+                        <div class="tech-stack">
+                            <span class="tag software">Leaflet</span>
+                            <span class="tag software">VS Code</span>
+                            <span class="tag language">Python</span>
+                            <span class="tag data">Sentinel-2</span>
+                            <span class="tag data">OpenStreetMap</span>
+                            <span class="tag data">Tree Dataset</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Objective</h4>
+                        <p>Identify buildings that meet one or more of the 3-30-300 criteria and highlight areas that may benefit from additional greening.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Method</h4>
+                        <p>Combined tree visibility, canopy cover and walking accessibility analyses using Python and geospatial datasets.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Outcome</h4>
+                        <p>Produced an interactive map showing compliance with the 3-30-300 guideline across Amsterdam West.</p>
+                    </div>
+                </div>
+                <a href="assets/project1_subset_interactive_map.html" target="_blank" class="project-link">
+                    View Interactive Map <i class="fa-solid fa-arrow-right"></i>
                 </a>
-
-                <a href="assets/Joseph_Amara_CV.pdf"
-                   download
-                   class="btn btn-secondary">
-
-                    Download CV
-
-                </a>
-
             </div>
 
         </div>
+    </article>
 
-    </div>
+    <article class="project-card reveal">
+        <div class="project-grid reverse">
+            
+            <div class="project-image">
+                <img src="images/project2.png" alt="Houston Heat Divide StoryMap">
+            </div>
 
+            <div class="project-content">
+                <div class="project-category">
+                    <i class="fa-solid fa-temperature-high"></i>
+                    Mapping Environmental Inequality
+                </div>
+                <h3 class="project-title">
+                    Houston's Heat Divide
+                </h3>
+                <p class="project-desc">
+                    This project explores how urban heat exposure varies across Harris County, Texas. By combining satellite imagery with socio-economic data, the study examines the links between vegetation cover, surface temperature and income levels across different neighbourhoods.
+                </p>
+            </div>
+
+            <div class="project-footer">
+                <div class="project-summary-grid">
+                    <div class="summary-card tools-card">
+                        <h4>Tools & Data</h4>
+                        <div class="tech-stack">
+                            <span class="tag software">ArcGIS StoryMaps</span>
+                            <span class="tag software">ArcGIS Pro</span>
+                            <span class="tag data">Landsat</span>
+                            <span class="tag data">Census Data</span>
+                            <span class="tag analysis">NDVI</span>
+                            <span class="tag analysis">LST</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Objective</h4>
+                        <p>Examine how heat exposure varies across neighbourhoods and identify links between temperature, vegetation and income.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Method</h4>
+                        <p>Combined Landsat-derived LST and NDVI data with census data to analyse spatial patterns across Harris County.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Outcome</h4>
+                        <p>Revealed that wealthier neighbourhoods generally had more vegetation and lower temperatures than less affluent areas.</p>
+                    </div>
+                </div>
+                <a href="https://storymaps.arcgis.com/stories/ce489e2e22ec4f99ad9da8d86ff3ccf0" target="_blank" class="project-link">
+                    View StoryMap <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </article>
+
+    <article class="project-card reveal">
+        <div class="project-grid">
+            
+            <div class="project-content">
+                <div class="project-category">
+                    <i class="fa-solid fa-route"></i>
+                    Finding the Optimal Route
+                </div>
+                <h3 class="project-title">
+                    Proposed Industrial Wastewater Pipeline Route in the Maas-Waal Region
+                </h3>
+                <p class="project-desc">
+                    A spatial suitability and routing analysis designed to identify the most suitable path for a new industrial wastewater pipeline while minimising environmental, topographic and land-use constraints.
+                </p>
+            </div>
+
+            <div class="project-image">
+                <img src="images/project3.png" alt="Pipeline suitability analysis">
+            </div>
+
+            <div class="project-footer">
+                <div class="project-summary-grid">
+                    <div class="summary-card tools-card">
+                        <h4>Tools & Data</h4>
+                        <div class="tech-stack">
+                            <span class="tag software">ArcGIS Pro</span>
+                            <span class="tag software">ModelBuilder</span>
+                            <span class="tag data">AHN Elevation</span>
+                            <span class="tag data">Land Use</span>
+                            <span class="tag analysis">Cost Distance</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Objective</h4>
+                        <p>Identify the most suitable route for a new industrial wastewater pipeline while meeting environmental and planning constraints.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Method</h4>
+                        <p>Developed a routing workflow in ArcGIS ModelBuilder using suitability analysis, cost-distance modelling and least-cost paths.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Outcome</h4>
+                        <p>Produced a repeatable model capable of identifying efficient and compliant pipeline routes.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <article class="project-card reveal">
+        <div class="project-grid reverse">
+            
+            <div class="project-image">
+                <img src="images/project4.png" alt="Flood mapping using Sentinel-1">
+            </div>
+
+            <div class="project-content">
+                <div class="project-category">
+                    <i class="fa-solid fa-water"></i>
+                    Machine Learning for Rapid Flood Detection
+                </div>
+                <h3 class="project-title">
+                    Comparing Global Thresholding and Random Forest Classification for Flood Mapping
+                </h3>
+                <p class="project-desc">
+                    This project compares a traditional threshold-based approach with a Random Forest model for flood mapping using Sentinel-1 radar imagery. The 2023 Kakhovka Dam breach was used as a real-world case study to evaluate which approach produced more reliable flood extent maps.
+                </p>
+            </div>
+
+            <div class="project-footer">
+                <div class="project-summary-grid">
+                    <div class="summary-card tools-card">
+                        <h4>Tools & Data</h4>
+                        <div class="tech-stack">
+                            <span class="tag software">Google Earth Engine</span>
+                            <span class="tag software">ArcGIS Pro</span>
+                            <span class="tag data">Sentinel-1</span>
+                            <span class="tag analysis">Random Forest</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Objective</h4>
+                        <p>Evaluate whether machine learning can improve flood mapping accuracy compared with a traditional threshold-based approach.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Method</h4>
+                        <p>Classified Sentinel-1 imagery using Random Forest and Global Thresholding, then compared both outputs against a reference dataset.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Outcome</h4>
+                        <p>Random Forest produced more accurate flood extent maps and reduced classification errors across complex landscapes.</p>
+                    </div>
+                </div>
+                <a href="assets/project4_paper.pdf" download class="project-link">
+                    Download Research Paper <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+
+        </div>
+    </article>
+
+    <article class="project-card reveal">
+        <div class="project-grid">
+            
+            <div class="project-content">
+                <div class="project-category">
+                    <i class="fa-solid fa-seedling"></i>
+                    Designing Climate-Resilient Neighbourhoods
+                </div>
+                <h3 class="project-title">
+                    From Grey to Green: A Climate-Adaptive Redesign of De Buurt, Wageningen
+                </h3>
+                <p class="project-desc">
+                    A redesign proposal for a neighbourhood in Wageningen aimed at reducing heat stress, improving biodiversity and increasing access to green space through nature-based solutions and sustainable urban design.
+                </p>
+            </div>
+
+            <div class="project-image">
+                <img src="images/project5.png" alt="Climate adaptive redesign">
+            </div>
+
+            <div class="project-footer">
+                <div class="project-summary-grid">
+                    <div class="summary-card tools-card">
+                        <h4>Tools & Data</h4>
+                        <div class="tech-stack">
+                            <span class="tag software">ArcGIS Pro</span>
+                            <span class="tag software">QGIS</span>
+                            <span class="tag software">Canva</span>
+                            <span class="tag data">Sentinel-2</span>
+                            <span class="tag analysis">Multi-Criteria</span>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Objective</h4>
+                        <p>Improve climate resilience, biodiversity and access to green space while maintaining a liveable neighbourhood environment.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Method</h4>
+                        <p>Applied GIS-based Multi-Criteria Analysis to identify priority intervention areas and guide the redesign process.</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Outcome</h4>
+                        <p>Produced a practical redesign strategy that enhances cooling, biodiversity and green infrastructure throughout the neighbourhood.</p>
+                    </div>
+                </div>
+                <a href="assets/project5_report.pdf" download class="project-link">
+                    Download Project Report <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+
+        </div>
+    </article>
+
+</div>
 </section>
-
-<!-- =========================================================
-PROJECTS
-========================================================= -->
-
-<section id="projects" class="projects-section">
-
-<div class="container">
-
-<div class="section-heading">
-
-    <h2>Projects</h2>
-
-    <p>
-        Selected projects in GIS, remote sensing, cartography
-        and environmental analysis.
-    </p>
-
-</div>
-
-<!-- =========================================================
-PROJECT 1
-========================================================= -->
-
-<article class="project-card reveal">
-
-<div class="project-grid">
-
-<div class="project-content">
-
-<div class="project-category">
-
-<i class="fa-solid fa-tree-city"></i>
-
-Measuring Urban Nature Accessibility
-
-</div>
-
-<h3 class="project-title">
-
-Visualising the 3-30-300 Guideline for Amsterdam West
-
-</h3>
-
-<p class="project-desc">
-
-An interactive geospatial analysis of Amsterdam West's
-compliance with the 3-30-300 urban greening guideline.
-The project combines visibility analysis, satellite-derived
-vegetation metrics and network accessibility modelling
-to evaluate how effectively neighbourhoods provide access
-to urban nature.
-
-</p>
-
-<div class="project-summary-grid">
-
-    <div class="summary-card tools-card">
-
-        <h4>Tools & Data</h4>
-
-        <div class="tech-stack">
-
-            <span class="tag software">Leaflet</span>
-            <span class="tag software">VS Code</span>
-            <span class="tag language">Python</span>
-            <span class="tag data">Sentinel-2</span>
-            <span class="tag data">OpenStreetMap</span>
-            <span class="tag data">Amsterdam Tree Dataset</span>
-
-        </div>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Objective</h4>
-
-        <p>
-            Identify buildings that meet one or more of the
-            3-30-300 criteria and highlight areas that may
-            benefit from additional greening.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Method</h4>
-
-        <p>
-            Combined tree visibility, canopy cover and
-            walking accessibility analyses using Python
-            and geospatial datasets.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Outcome</h4>
-
-        <p>
-            Produced an interactive map showing compliance
-            with the 3-30-300 guideline across Amsterdam West.
-        </p>
-
-    </div>
-
-</div>
-
-<a href="assets/project1_subset_interactive_map.html"
-   target="_blank"
-   class="project-link">
-
-View Interactive Map
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-<div class="project-image">
-
-<img src="images/project1.png"
-     alt="3-30-300 guideline interactive map">
-
-</div>
-
-</div>
-
-</article>
-<!-- =========================================================
-PROJECT 2
-========================================================= -->
-
-<article class="project-card reveal">
-
-<div class="project-grid reverse">
-
-<div class="project-image">
-
-<img src="images/project2.png"
-     alt="Houston Heat Divide StoryMap">
-
-</div>
-
-<div class="project-content">
-
-<div class="project-category">
-
-<i class="fa-solid fa-temperature-high"></i>
-
-Mapping Environmental Inequality
-
-</div>
-
-<h3 class="project-title">
-
-Houston's Heat Divide
-
-</h3>
-
-<p class="project-desc">
-
-This project explores how urban heat exposure varies
-across Harris County, Texas. By combining satellite
-imagery with socio-economic data, the study examines
-the links between vegetation cover, surface temperature
-and income levels across different neighbourhoods.
-
-</p>
-
-<div class="project-summary-grid">
-
-    <div class="summary-card tools-card">
-
-        <h4>Tools & Data</h4>
-
-        <div class="tech-stack">
-
-            <span class="tag software">ArcGIS StoryMaps</span>
-            <span class="tag software">ArcGIS Pro</span>
-            <span class="tag data">Landsat</span>
-            <span class="tag data">US Census Data</span>
-            <span class="tag analysis">NDVI</span>
-            <span class="tag analysis">Land Surface Temperature</span>
-
-        </div>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Objective</h4>
-
-        <p>
-            Examine how heat exposure varies across
-            neighbourhoods and identify links between
-            temperature, vegetation and income.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Method</h4>
-
-        <p>
-            Combined Landsat-derived LST and NDVI
-            data with census data to analyse
-            spatial patterns across Harris County.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Outcome</h4>
-
-        <p>
-            Revealed that wealthier neighbourhoods generally
-            had more vegetation and lower temperatures than
-            less affluent areas.
-        </p>
-
-    </div>
-
-</div>
-
-<a href="https://storymaps.arcgis.com/stories/ce489e2e22ec4f99ad9da8d86ff3ccf0"
-   target="_blank"
-   class="project-link">
-
-View StoryMap
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- =========================================================
-PROJECT 3
-========================================================= -->
-
-<article class="project-card reveal">
-
-<div class="project-grid">
-
-<div class="project-content">
-
-<div class="project-category">
-
-<i class="fa-solid fa-route"></i>
-
-Finding the Optimal Route
-
-</div>
-
-<h3 class="project-title">
-
-Proposed Industrial Wastewater Pipeline Route in the
-Maas-Waal Region
-
-</h3>
-
-<p class="project-desc">
-
-A spatial suitability and routing analysis designed
-to identify the most suitable path for a new industrial
-wastewater pipeline while minimising environmental,
-topographic and land-use constraints.
-
-</p>
-
-<div class="project-summary-grid">
-
-    <div class="summary-card tools-card">
-
-        <h4>Tools & Data</h4>
-
-        <div class="tech-stack">
-
-            <span class="tag software">ArcGIS Pro</span>
-            <span class="tag software">ModelBuilder</span>
-            <span class="tag data">AHN Elevation Data</span>
-            <span class="tag data">Land Use Data</span>
-            <span class="tag analysis">Cost Distance</span>
-            <span class="tag analysis">Least Cost Path</span>
-
-        </div>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Objective</h4>
-
-        <p>
-            Identify the most suitable route for a new
-            industrial wastewater pipeline while meeting
-            environmental and planning constraints.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Method</h4>
-
-        <p>
-            Developed a routing workflow in ArcGIS
-            ModelBuilder using suitability analysis,
-            cost-distance modelling and least-cost paths.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Outcome</h4>
-
-        <p>
-            Produced a repeatable model capable of
-            identifying efficient and compliant
-            pipeline routes.
-        </p>
-
-    </div>
-
-</div>
-
-</div>
-
-<div class="project-image">
-
-<img src="images/project3.png"
-     alt="Pipeline suitability analysis">
-
-</div>
-
-</div>
-
-</article>
-
-<!-- =========================================================
-PROJECT 4
-========================================================= -->
-
-<article class="project-card reveal">
-
-<div class="project-grid reverse">
-
-<div class="project-image">
-
-<img src="images/project4.png"
-     alt="Flood mapping using Sentinel-1">
-
-</div>
-
-<div class="project-content">
-
-<div class="project-category">
-
-<i class="fa-solid fa-water"></i>
-
-Machine Learning for Rapid Flood Detection
-
-</div>
-
-<h3 class="project-title">
-
-Comparing Global Thresholding and Random Forest
-Classification for Flood Mapping
-
-</h3>
-
-<p class="project-desc">
-
-This project compares a traditional threshold-based
-approach with a Random Forest model for flood mapping
-using Sentinel-1 radar imagery. The 2023 Kakhovka Dam
-breach was used as a real-world case study to evaluate
-which approach produced more reliable flood extent maps.
-
-</p>
-
-<div class="project-summary-grid">
-
-    <div class="summary-card tools-card">
-
-        <h4>Tools & Data</h4>
-
-        <div class="tech-stack">
-
-            <span class="tag software">Google Earth Engine</span>
-
-            <span class="tag software">ArcGIS Pro</span>
-
-            <span class="tag data">Sentinel-1</span>
-
-            <span class="tag analysis">Random Forest</span>
-
-            <span class="tag analysis">Classification</span>
-
-        </div>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Objective</h4>
-
-        <p>
-            Evaluate whether machine learning can improve
-            flood mapping accuracy compared with a
-            traditional threshold-based approach.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Method</h4>
-
-        <p>
-            Classified Sentinel-1 imagery using Random
-            Forest and Global Thresholding, then compared
-            both outputs against a reference dataset.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Outcome</h4>
-
-        <p>
-            Random Forest produced more accurate flood
-            extent maps and reduced classification errors
-            across complex landscapes.
-        </p>
-
-    </div>
-
-</div>
-
-<a href="assets/project4_paper.pdf"
-   target="_blank"
-   class="project-link">
-
-View Research Paper
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- =========================================================
-PROJECT 5
-========================================================= -->
-
-<article class="project-card reveal">
-
-<div class="project-grid">
-
-<div class="project-content">
-
-<div class="project-category">
-
-<i class="fa-solid fa-seedling"></i>
-
-Designing Climate-Resilient Neighbourhoods
-
-</div>
-
-<h3 class="project-title">
-
-From Grey to Green: A Climate-Adaptive Redesign of
-De Buurt, Wageningen
-
-</h3>
-
-<p class="project-desc">
-
-A redesign proposal for a neighbourhood in Wageningen
-aimed at reducing heat stress, improving biodiversity
-and increasing access to green space through nature-based
-solutions and sustainable urban design.
-
-</p>
-
-<div class="project-summary-grid">
-
-    <div class="summary-card tools-card">
-
-        <h4>Tools & Data</h4>
-
-        <div class="tech-stack">
-
-            <span class="tag software">ArcGIS Pro</span>
-
-            <span class="tag software">QGIS</span>
-
-            <span class="tag software">Canva</span>
-
-            <span class="tag data">Sentinel-2</span>
-
-            <span class="tag analysis">Multi-Criteria Analysis</span>
-
-        </div>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Objective</h4>
-
-        <p>
-            Improve climate resilience, biodiversity and
-            access to green space while maintaining a
-            liveable neighbourhood environment.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Method</h4>
-
-        <p>
-            Applied GIS-based Multi-Criteria Analysis to
-            identify priority intervention areas and guide
-            the redesign process.
-        </p>
-
-    </div>
-
-    <div class="summary-card">
-
-        <h4>Outcome</h4>
-
-        <p>
-            Produced a practical redesign strategy that
-            enhances cooling, biodiversity and green
-            infrastructure throughout the neighbourhood.
-        </p>
-
-    </div>
-
-</div>
-
-<a href="assets/project5_report.pdf"
-   target="_blank"
-   class="project-link">
-
-View Project Report
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-<div class="project-image">
-
-<img src="images/project5.png"
-     alt="Climate adaptive redesign">
-
-</div>
-
-</div>
-
-</article>
-
-</div>
-
-</section>
-
-<!-- =========================================================
-SKILLS SECTION
-========================================================= -->
 
 <section id="skills" class="skills-section">
-
 <div class="container">
-
-<div class="section-heading">
-
-<h2>Skills & Expertise</h2>
-
-<p>
-Software, methods and technical skills developed through
-academic and professional experience.
-</p>
-
+    <div class="section-heading">
+        <h2>Skills & Expertise</h2>
+        <p>Software, methods and technical skills developed through academic and professional experience.</p>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fa-solid fa-satellite"></i>
+            <h3>Remote Sensing</h3>
+            <p>Google Earth Engine, Sentinel-1, Sentinel-2, Landsat, LiDAR, Agisoft Metashape</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3>GIS & Spatial Analysis</h3>
+            <p>ArcGIS Pro, QGIS, ArcGIS Online, Leaflet, Folium, Network Analysis, Suitability Analysis</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming</h3>
+            <p>Python, R, Git, GitHub, GitLab</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Visualisation & Design</h3>
+            <p>Cartography, StoryMaps, Data Visualisation, Canva, Scientific Communication</p>
+        </div>
+    </div>
 </div>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-
-<i class="fa-solid fa-satellite"></i>
-
-<h3>Remote Sensing</h3>
-
-<p>
-Google Earth Engine,
-Sentinel-1,
-Sentinel-2,
-Landsat,
-LiDAR,
-Agisoft Metashape
-</p>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-solid fa-map-location-dot"></i>
-
-<h3>GIS & Spatial Analysis</h3>
-
-<p>
-ArcGIS Pro,
-QGIS,
-ArcGIS Online,
-Leaflet,
-Folium,
-Network Analysis,
-Suitability Analysis
-</p>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-solid fa-code"></i>
-
-<h3>Programming</h3>
-
-<p>
-Python,
-R,
-Git,
-GitHub,
-GitLab
-</p>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>Visualisation & Design</h3>
-
-<p>
-Cartography,
-StoryMaps,
-Data Visualisation,
-Canva,
-Scientific Communication
-</p>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 </main>
 
-<!-- =========================================================
-FOOTER
-========================================================= -->
-
 <footer id="contact">
-
 <div class="footer-container">
-
-<h2>
-Let's Connect
-</h2>
-
-<p class="footer-text">
-
-Thank you for visiting my portfolio.
-Feel free to get in touch regarding collaborations,
-research opportunities or professional work.
-
-</p>
-
-<div class="social-links">
-
-<a href="mailto:joseph.amara@wur.nl">
-
-<i class="fa-solid fa-envelope"></i>
-
-WUR Email
-
-</a>
-
-<a href="mailto:josephamara3284@gmail.com">
-
-<i class="fa-solid fa-envelope-open"></i>
-
-Personal Email
-
-</a>
-
-<a href="https://github.com/Joseph-Amara"
-   target="_blank">
-
-<i class="fa-brands fa-github"></i>
-
-GitHub
-
-</a>
-
-<a href="https://www.linkedin.com/in/joseph-amara-891380207/"
-   target="_blank">
-
-<i class="fa-brands fa-linkedin"></i>
-
-LinkedIn
-
-</a>
-
+    <h2>Let's Connect</h2>
+    <p class="footer-text">
+        Thank you for visiting my portfolio. Feel free to get in touch regarding collaborations, research opportunities or professional work.
+    </p>
+    <div class="social-links">
+        <a href="mailto:joseph.amara@wur.nl">
+            <i class="fa-solid fa-envelope"></i> WUR Email
+        </a>
+        <a href="mailto:josephamara3284@gmail.com">
+            <i class="fa-solid fa-envelope-open"></i> Personal Email
+        </a>
+        <a href="https://github.com/Joseph-Amara" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/joseph-amara-891380207/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+    <p class="copyright">© 2026 Joseph Amara. All Rights Reserved.</p>
 </div>
-
-<p class="copyright">
-
-© 2026 Joseph Amara.
-All Rights Reserved.
-
-</p>
-
-</div>
-
 </footer>
 
-<!-- =========================================================
-BACK TO TOP BUTTON
-========================================================= -->
-
 <button id="backToTop">
-
-<i class="fa-solid fa-arrow-up"></i>
-
+    <i class="fa-solid fa-arrow-up"></i>
 </button>
 
-<!-- =========================================================
-LIGHTBOX
-========================================================= -->
-
 <div id="lightbox" class="lightbox">
-
-<span class="lightbox-close">&times;</span>
-
-<img class="lightbox-image" src="" alt="">
-
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-image" src="" alt="">
 </div>
-
-<!-- =========================================================
-JAVASCRIPT
-========================================================= -->
 
 <script src="script.js"></script>
 

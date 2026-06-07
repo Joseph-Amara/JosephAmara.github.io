@@ -28,9 +28,14 @@
                 
                 <!-- Left Side of Hero -->
                 <div class="hero-left">
-                    <p class="subtitle">Geo-visualisation Portfolio</p>
-                    <h1>Joseph Amara</h1>
-                    <p class="tagline">GIS and Remote Sensing Analyst, Geologist, Environmental Consultant.</p>
+                    <div class="hero-top">
+                        <img src="images/joseph-photo.jpg" alt="Photo of Joseph Amara" class="hero-photo">
+                        <div class="hero-intro-text">
+                            <p class="subtitle">Geo-visualisation Portfolio</p>
+                            <h1>Joseph Amara</h1>
+                            <p class="tagline">GIS and Remote Sensing Analyst, Geologist, Environmental Consultant.</p>
+                        </div>
+                    </div>
                     <div class="hero-buttons">
                         <a href="#experience" class="btn btn-primary">Experience &darr;</a>
                         <!-- Replace 'your-cv.pdf' with your actual filename later -->
@@ -157,11 +162,11 @@
                             <img src="images/project4.png" alt="Sentinel-1 Flood Mapping classification screenshots">
                         </div>
                         <div class="project-content">
-                            <p class="project-desc">Brief description of what the visualisation does goes here...</p>
+                            <p class="project-desc">This project evaluates different satellite imagery techniques for rapid flood mapping, using the 2023 Kakhovka Dam breach in Ukraine as a case study. It showed the advantages of machine learning over traditional methods in accurately identifying flooded areas across heterogeneous landscapes.</p>
                             <div class="project-details">
                                 <h4>Key Takeaways:</h4>
-                                <p><strong>Objective:</strong> Details about the project goal...</p>
-                                <p><strong>Method:</strong> Steps taken to achieve the visualization...</p>
+                                <p><strong>Objective:</strong> To compare the accuracy of a traditional Global Thresholding approach against a Random Forest classification model for mapping flood extents using Sentinel-1 radar data</p>
+                                <p><strong>Method:</strong> The study processed pre-flood and during-flood Sentinel-1 radar images. A Random Forest classifier and a Global Threshold method were applied to the data to distinguish water from land. The outputs were then compared against a high-resolution reference map to calculate error rates , revealing that the Random Forest model provided a significantly more reliable flood map.</p>
                                 <p><strong>Tools used:</strong> Google Earth Engine, ArcGIS Pro, Sentinel-1</p>
                             </div>
                             <a href="papers/kakhovka-flood-mapping.pdf" download class="project-link">Download Research Paper &rarr;</a>
@@ -179,11 +184,11 @@
                             <img src="images/project5.png" alt="Climate adaptive redesign poster screenshot">
                         </div>
                         <div class="project-content">
-                            <p class="project-desc">Brief description of what the visualisation does goes here...</p>
+                            <p class="project-desc">This project proposes a climate-adaptive redesign of 'De Buurt', a Wageningen neighbourhood currently vulnerable to urban heat stress due to a lack of green space. By integrating nature-based solutions into the existing streets, the design transforms the paved environment into a resilient, biodiverse, and connected community space.</p>
                             <div class="project-details">
                                 <h4>Key Takeaways:</h4>
-                                <p><strong>Objective:</strong> Details about the project goal...</p>
-                                <p><strong>Method:</strong> Steps taken to achieve the visualization...</p>
+                                <p><strong>Objective:</strong> To improve the neighbourhood's climate resilience, biodiversity, and access to public green space through a strategic redesign that balances environmental goals with resident needs.</p>
+                                <p><strong>Method:</strong> A Multi-Criteria Analysis was first conducted using GIS software to pinpoint areas most in need of green interventions. Based on these insights, a spatial design was developed featuring new green corridors, bioswales, grass pavers and wildflower meadows. The final proposed redesign was visualised through a detailed poster to present a phased, actionable strategy for local stakeholders.</p>
                                 <p><strong>Tools used:</strong> ArcGIS Pro, QGIS, Sentinel-2, Canva</p>
                             </div>
                             <a href="reports/de-buurt-redesign.pdf" download class="project-link">Download Project Report &rarr;</a>
@@ -202,12 +207,12 @@
                     
                     <div class="skills-category">
                         <h3>Remote Sensing</h3>
-                        <p>Google Earth Engine, Sentinel-1, Sentinel-2, Agisoft Metashape, etc.</p>
+                        <p>Google Earth Engine, Sentinel-1, Sentinel-2, Agisoft Metashape, LiDAR, Landsat 7/8</p>
                     </div>
 
                     <div class="skills-category">
                         <h3>GIS & Spatial Modelling</h3>
-                        <p>ArcGIS Pro, QGIS, NetLogo, etc.</p>
+                        <p>ArcGIS Pro, QGIS, ArcGIS Online (StoryMaps), Leaflet, Folium and NetLogo</p>
                     </div>
 
                     <div class="skills-category">
@@ -231,14 +236,14 @@
             <h3>Joseph Amara</h3>
             <p class="footer-tagline">GIS and Remote Sensing Analyst | Geologist | Environmental Consultant</p>
             <div class="social-links">
-                <a href="mailto:your.email@wur.nl">Email</a>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:joseph.amara@wur.nl">Email joseph.amara@wur.nl</a>
+                <a href="mailto:josephamara3284@gmail.com">Email josephamara3284@gmail.com</a>
+                <a href="https://github.com/Joseph-Amara" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/joseph-amara-891380207/" target="_blank">LinkedIn</a>
             </div>
             <p class="copyright">&copy; 2026 Joseph Amara. All rights reserved.</p>
         </div>
     </footer>
-
     <!-- We will link our JavaScript file here in Phase 4 if needed -->
     <!-- <script src="script.js"></script> -->
 </body>
